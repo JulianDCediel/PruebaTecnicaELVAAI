@@ -105,7 +105,7 @@ JWT_EXPIRE_MINUTES=60
 #### Ejecutar el servidor
 
 ```bash
-uvicorn app.main:app --reload --port 8000
+uvicorn main:app --reload --port 8000
 ```
 
 La API queda disponible en `http://localhost:8000`.
