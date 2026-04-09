@@ -56,7 +56,10 @@ cd PruebaTecnicaELVAAI
 Desde pgAdmin o psql:
 
 ```sql
-CREATE DATABASE pruebaTecnicaElVA;
+abrir una terminal
+ejecutar: psql -U postgres
+ingresar contraseña
+ejecutar: CREATE DATABASE pruebaTecnicaElVA;
 ```
 
 #### Dejar que el backend la inicialice solo
@@ -93,7 +96,7 @@ pip install -r requirements.txt
 
 #### variables de entorno
 
-EL archivo .env no lo puse en el gitignore porque tiene datos locales , en esta parte remplazar://postgres:admin por el usuraio y la contraseña respectiva que se use localmente 
+EL archivo .env no lo puse en el gitignore porque tiene datos locales , en esta parte remplazar: :admin por la contraseña respectiva del usuario postgres que se use localmente 
 
 ```env
 DATABASE_URL=postgresql://postgres:admin@localhost:5432/pruebaTecnicaElVA
